@@ -1,0 +1,49 @@
+{
+  "name": "mindcore-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for onchain chat and DeFi operations, compatible with AI models.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "mindcore-mcp": "dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/onchain-chat-mcp.git"
+  },
+  "keywords": [
+    "blockchain",
+    "defi",
+    "mcp",
+    "ai",
+    "chat",
+    "uniswap",
+    "web3"
+  ],
+  "author": "hieudt <hieudt@thehumaninc.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "bn.js": "^5.2.2",
+    "dotenv": "^17.2.0",
+    "h3": "^1.15.3",
+    "openai": "^5.9.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "web3": "^4.16.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.2.0",
+    "@types/express": "^4.17.21"
+  }
+}
