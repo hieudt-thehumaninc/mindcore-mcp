@@ -1,6 +1,6 @@
 {
   "name": "mindcore-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for onchain chat and DeFi operations, compatible with AI models.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
